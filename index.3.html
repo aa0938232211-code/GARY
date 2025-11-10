@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動畫作品 - 黃苡睿</title>
+
+    <style>
+        /* --- 全局深色風格 --- */
+        body {
+            font-family: Arial, "Microsoft JhengHei", sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* --- 導覽列 --- */
+        nav {
+            background-color: #111;
+            text-align: center;
+            padding: 15px 0;
+            border-bottom: 2px solid #333;
+        }
+
+        nav a {
+            color: #ccc;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00aaff;
+        }
+
+        nav a.active {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* --- 主內容容器 --- */
+        .container {
+            width: 90%;
+            max-width: 960px;
+            margin: 30px auto;
+            background-color: #2a2a2a;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #e0e0e0;
+        }
+
+        /* --- 圖片放置區 --- */
+        .top-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        }
+
+        /* --- 影片放置區 --- */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #000;
+            margin-bottom: 30px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* --- 下方圖片與文字區 --- */
+        .bottom-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .bottom-image {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+
+        .bottom-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        }
+
+        .bottom-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        footer {
+            text-align: center;
+            color: #aaa;
+            border-top: 1px solid #444;
+            padding-top: 15px;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+
+        /* --- RWD 響應式 --- */
+        @media (max-width: 768px) {
+            .bottom-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <nav>
+        <a href="index1.html">關於我</a>
+        <a href="index2.html">插畫</a>
+        <a href="index.3.html">動畫</a>
+        <a href="index4.html">平面</a>
+        <a href="index5.html">攝影</a>
+    </nav>
+
+    <div class="container">
+        <h1>動畫作品</h1>
+
+        <img src="C:\Users\User\Desktop\GARY-2025\圖片\介紹個人.png" alt="動畫封面圖" class="top-image">
+
+        <div class="video-container">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/E8oE7vSbY64?si=mOXBdtVwJvCpz2Ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+        <div class="bottom-section">
+            <div class="bottom-image">
+                <img src="嫁給我1.png" alt="動畫插圖">
+            </div>
+            <div class="bottom-text">
+                <h2>作品介紹</h2>
+                <p>這部動畫以「嫁給我」為主題，透過獨特的角色設計與溫暖色調，描繪出關於承諾與陪伴的故事。希望能帶給觀眾更多關於愛與勇氣的思考。</p>
+                <p>使用軟體：After Effects、Photoshop、Premiere Pro。</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 黃苡睿 | 動畫作品頁面</p>
+        </footer>
+    </div>
+</body>
+</html>

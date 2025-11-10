@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人介紹網站 - 黃苡睿</title>
+    
+    
+    <style>
+        /* --- 全局深色模式設定 --- */
+        body {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #f4f4f4;
+        }
+
+        /* --- 導覽列樣式 --- */
+        nav {
+            background-color: #111;
+            text-align: center;
+            padding: 15px 0;
+            border-bottom: 2px solid #333;
+        }
+
+        nav a {
+            color: #ccc;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00aaff;
+        }
+
+        nav a.active {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* --- 主內容容器 --- */
+        .container {
+            width: 90%;
+            max-width: 960px;
+            margin: 30px auto;
+            background-color: #2a2a2a;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #444;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #e0e0e0;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #bbbbbb;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        section h2 {
+            color: #cccccc;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* --- 關於我區塊 --- */
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .about-text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .profile-photo {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+        }
+
+        .profile-photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid #e2e2e2;
+            box-shadow: 0 0 10px rgba(194, 223, 255, 0.5);
+        }
+
+        /* --- 技能區塊 --- */
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #skills li {
+            background: #3a3a3a;
+            margin: 8px 0;
+            padding: 12px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+        }
+
+        #skills li::before {
+            content: '✨';
+            margin-right: 10px;
+        }
+
+        a {
+            color: #0099ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- 影片區塊 --- */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 0.9em;
+            color: #999;
+        }
+
+        /* --- RWD 響應式 --- */
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-text, .profile-photo {
+                width: 100%;
+            }
+            nav a {
+                display: inline-block;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- 導覽列 -->
+    <nav>
+        <a href="index1.html">關於我</a>
+        <a href="index2.html">插畫</a>
+        <a href="index.3.html">動畫</a>
+        <a href="index4.html">平面</a>
+        <a href="index5.html">攝影</a>
+    </nav>
+
+    <div class="container"> 
+        <header>
+            <h1>黃苡睿</h1>
+            <p class="tagline">我們每個人都有一些生活上的小怪癖一些奇怪的想法跟行動而這些想法與行動</p>
+            <p class="tagline">也可能帶給別人很多各式各樣的靈感與想法一個好東西的誕生往往都可能來自於一個莫名其妙的想法。</p>
+        </header>
+
+        <section id="about">
+            <h2 style="text-align: center;">關於我</h2>
+            <div class="about-content">
+                <div class="about-text" style="text-align: center;">
+                  <p>我叫黃苡睿，朋友平常也會叫我Gary，</p>
+                  <p>我平常喜歡插畫、排版設計，也會一些基本修圖，</p>
+                  <p>常用的軟體像是 Canva、Adobe Illustrator等。</p>
+                  <p>除了設計之外，我也會接觸一些影片剪輯，喜歡把想</p>
+                  <p>法透過視覺和影像的方式表達出來在，工作與生活上，</p>
+                  <p>我重視創意和細節，也希望能跟不同的人交流、合作，</p>
+                  <p>分享彼此的想法。</p>
+                  <p>業餘時間我喜歡 [興趣一] 和 [興趣二]。</p>
+                </div>
+                <div class="profile-photo">
+                    <img src="黃苡睿.jpg" alt="個人照片">
+                    <p style="margin-top: 10px; color: #bbbbbb;">這是我的個人照片</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="skills">
+            <h2>技能與專長</h2>
+            <ul>
+                <li>會的程式，Photoshop、Illustrator、Premiere Pro、Figma</li>
+                <li>我的主要專業技能，例平面設計、攝影、影像剪輯、網頁設計、策展</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>聯絡我</h2>
+            <a href="https://www.instagram.com/aa0938232211?igsh=MnY1bXB0NG1iM284&utm_source=qr">個人插畫網頁IG</a>
+            <p><a href="https://freak2023.weebly.com/">怪咖網站</a></p>
+            <p>電話 <a href="0938232211" target="_blank">0938232211</a></p>
+        </section>
+
+        <footer>
+            <p>感謝您的造訪！ &copy; 2025 黃苡睿.</p>
+        </footer>
+    </div>
+</body>
+</html>

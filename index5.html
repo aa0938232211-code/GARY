@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平面作品 - 黃苡睿</title>
+
+    <style>
+        /* --- 全局深色風格 --- */
+        body {
+            font-family: Arial, "Microsoft JhengHei", sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* --- 導覽列 --- */
+        nav {
+            background-color: #111;
+            text-align: center;
+            padding: 15px 0;
+            border-bottom: 2px solid #333;
+        }
+
+        nav a {
+            color: #ccc;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00aaff;
+        }
+
+        nav a.active {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* --- 主內容容器 --- */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: #2a2a2a;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            text-align: center;
+            color: #e0e0e0;
+            margin-bottom: 30px;
+        }
+
+        /* --- 頂部圖片放置區 --- */
+        .top-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        }
+
+        /* --- 圖片展示區 --- */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0,150,255,0.6);
+        }
+
+        footer {
+            text-align: center;
+            color: #aaa;
+            border-top: 1px solid #444;
+            padding-top: 15px;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- 導覽列 -->
+    <nav>
+        <a href="index1.html">關於我</a>
+        <a href="index2.html">插畫</a>
+        <a href="index.3.html">動畫</a>
+        <a href="index4.html">平面</a>
+        <a href="index5.html">攝影</a>
+    </nav>
+    <div class="container">
+        <h1>攝影作品</h1>
+
+        <!-- 頂部圖片放置區 -->
+        <img src="介紹個人.png" alt="插畫封面圖" class="top-image">
+
+        <!-- 插畫圖片展示區 -->
+        <div class="gallery">
+            <img src="平面作品1.jpg">
+            <img src="平面作品2.jpg"alt="插畫2">
+            <img src="平面作品3.jpg" alt="插畫3">
+            <img src="平面作品4.jpg" alt="插畫4">
+            <img src="平面作品5.jpg"alt="插畫5">
+            <img src="平面作品6.jpg" alt="插畫6">
+            <img src="平面作品7.jpg" alt="插畫7">
+            <img src="平面作品8.jpg" alt="插畫8">
+        </div>
+
+        <footer>
+            <p>© 2025 黃苡睿 | 插畫作品頁面</p>
+        </footer>
+    </div>
+</body>
+</html>
